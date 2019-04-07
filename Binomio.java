@@ -14,25 +14,29 @@ public class Binomio
         System.out.println("Introduzca los valores de a, b y c: ");
                 V.Valores();
                 a=V.getValor();
-                System.out.println(a);
                 V.Valores();
                 b=V.getValor();
-                System.out.println(b);
                 V.Valores();
                 c=V.getValor();
-                System.out.println(c);
                 
         double a1=Double.parseDouble(a);
         double b1=Double.parseDouble(b);
         double c1=Double.parseDouble(c);
         
-        if(a1!=0 && b1!=0)
+        if(a1==0)
         {
-            V.APos(a1,b1,c1);
+            System.out.println("No es posible encontrar una solución");
         }
-        else if(a1==0)
+        else
         {
-            
+            if(a1==1)
+            {
+                V.A1(b1);
+            }
+            else
+            {
+                V.APos(a1,b1,c1);
+            }
         }
     }
 }

@@ -15,7 +15,6 @@ public class Validaciones
         char v=V.charAt(0);
             if(Character.isDigit(v))
             {
-                System.out.print("Valor aceptado");
             } 
         }catch(Exception e){System.err.println("Error de entrada, digite puros digitos");}
     }
@@ -42,5 +41,13 @@ public class Validaciones
         {
             Op.DisNeg(discriminante,a,b);
         }
+    }
+    
+    public void A1(double b)
+    {
+        double raiz=Math.sqrt((b*b)/4);
+        double x1=(-b/2)+((raiz/4)-b);
+        double x2=(-b/2)-((raiz/4)-b);
+        System.out.println("x1= "+x1+"\nx2= "+x2);
     }
 }
