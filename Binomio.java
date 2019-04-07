@@ -30,5 +30,9 @@ public class Binomio
         {
             V.APos(a1,b1,c1);
         }
+        else if(a1==0)
+        {
+            
+        }
     }
 }
