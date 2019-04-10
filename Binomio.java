@@ -3,8 +3,9 @@ import java.util.Scanner;
 public class Binomio 
 {
 
-    public static void main(String[] args) 
+    public static void main(String[] args) throws InterruptedException 
     {
+        long inicio=System.currentTimeMillis();
         Scanner sc=new Scanner(System.in);
         int i;
         String a,b,c;
@@ -50,5 +51,8 @@ public class Binomio
                 V.APos(a1,b1,c1);
             }
         }
+        long fin=System.currentTimeMillis();
+        double EjecTiempo=(double)((fin-inicio)/1000);
+        System.out.println(EjecTiempo+" segundos");
     }
 }
