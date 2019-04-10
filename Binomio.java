@@ -39,11 +39,11 @@ public class Binomio
             }
             else if(c1==0 && b1!=0)
             {
-                V.C0();
+                V.C0(a1,b1);
             }
             else if(c1==0 && b1==0)
             {
-                V.BC0();
+                V.BC0(a1);
             }
             else
             {

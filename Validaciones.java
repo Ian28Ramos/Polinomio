@@ -60,14 +60,22 @@ public class Validaciones
         System.out.println("x1= "+x1+"\nx2= "+x2);
     }
     
-    public void C0()
+    public void C0(double a, double b)
     {
+        Op.Raiz(b);
+        double raiz=Op.getRaiz();
+        double x1=(-b+raiz)/(2*a);
+        double x2=(-b-raiz)/(2*a);
+        System.out.println("x1= "+x1+"\nx2= "+x2);
         
     }
     
-    public void BC0()
+    public void BC0(double a)
     {
-        
+        Op.Raiz(a);
+        double x1=Op.getRaiz();
+        double x2=-(Op.getRaiz());
+        System.out.println("x1= "+x1+"\nx2= "+x2);
     }
     
     public void ComprobacionB()
