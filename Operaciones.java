@@ -14,7 +14,7 @@ public class Operaciones
     
     public void DisPos(double discriminante,double a, double b)
     {
-        Raiz();
+        Raiz(discriminante);
         double raiz=getRaiz();
         double x1=0,x2=0;
         this.x1=x1;
@@ -37,7 +37,7 @@ public class Operaciones
     public void DisNeg(double discriminante,double a,double b)
     {
         this.discriminante=discriminante*-1;
-        Raiz();
+        Raiz(discriminante);
         double raiz=getRaiz();
         double x1I=0,x2I=0,x1R=0,x2R=0;
         String x1="",x2="";
@@ -58,9 +58,9 @@ public class Operaciones
         return discriminante;
     }
     
-    public double Raiz()
+    public double Raiz(double r)
     {
-       double raiz=Math.sqrt(discriminante);
+       double raiz=Math.sqrt(r);
        this.raiz=raiz;
        return raiz;
     }

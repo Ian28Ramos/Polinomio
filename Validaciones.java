@@ -45,9 +45,38 @@ public class Validaciones
     
     public void A1(double b)
     {
-        double raiz=Math.sqrt((b*b)/4);
+        Op.Raiz((b*b)/4);
+        double raiz=Op.getRaiz();
         double x1=(-b/2)+((raiz/4)-b);
         double x2=(-b/2)-((raiz/4)-b);
         System.out.println("x1= "+x1+"\nx2= "+x2);
+    }
+    
+    public void B0(double a, double c)
+    {
+        Op.Raiz(-(c/a));
+        double x1=Op.getRaiz();
+        double x2=-(Op.getRaiz());
+        System.out.println("x1= "+x1+"\nx2= "+x2);
+    }
+    
+    public void C0()
+    {
+        
+    }
+    
+    public void BC0()
+    {
+        
+    }
+    
+    public void ComprobacionB()
+    {
+        
+    }
+    
+    public void ComprobacionC()
+    {
+        
     }
 }

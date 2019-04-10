@@ -33,6 +33,18 @@ public class Binomio
             {
                 V.A1(b1);
             }
+            else if(b1==0 && c1!=0)
+            {
+                V.B0(a1, c1);
+            }
+            else if(c1==0 && b1!=0)
+            {
+                V.C0();
+            }
+            else if(c1==0 && b1==0)
+            {
+                V.BC0();
+            }
             else
             {
                 V.APos(a1,b1,c1);
